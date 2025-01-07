@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('project_id')->nullable()->index();
+            $table->foreignId('user_id')->index();
+            $table->foreignId('project_id')->index();
             $table->string('task_name');
-            $table->integer('priority');
+            $table->integer('priority')->nullable();
             $table->timestamps();
         });
     }

@@ -6,7 +6,7 @@ use Livewire\Component;
 use App\Models\Project;
 use Illuminate\Support\Facades\{ Log, DB  };
 
-class ProjectCRUD extends Component
+class ProjectCrud extends Component
 {
     public $projects,
         $name,
